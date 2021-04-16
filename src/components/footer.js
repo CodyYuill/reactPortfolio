@@ -1,7 +1,19 @@
+
 function Footer() {
+    let styles = {
+        width: "100%",
+        position: "fixed",
+        left: "0",
+        bottom: "0",
+        textAlign: "center"
+    }
     return (
         <>
-            <h1>THIS IS A FOOTER</h1>
+        <footer className="footer mt-auto py-3 bg-dark"  style={styles}>
+            <div className="container">
+            <span className="text-muted">Place sticky footer content here.</span>
+            </div>
+        </footer>
         </>
     );
 }
