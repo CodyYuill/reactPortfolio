@@ -1,36 +1,18 @@
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-
-let styles = {
-    a: {
-        color: "white",
-        textDecoration: "none"
-    },
-    text: {
-        color: "white"
-    },
-    card: {
-        borderRadius: "0"
-    }
-};
-
+import Card from "react-bootstrap/Card";
 
 function ProjectCard(props) {
-  return (
-    <>
-      <Card className="bg-dark text-center" style={styles.card}>
-        <Card.Header>
-          <Accordion.Toggle as={Button} variant="link" eventKey={props.id} style={styles.a}>
-            Click me!
-          </Accordion.Toggle>
-        </Card.Header>
-        <Accordion.Collapse eventKey={props.id}>
-          <Card.Body style={styles.text}>Hello! I'm the body</Card.Body>
-        </Accordion.Collapse>
-      </Card>
-    </>
-  );
+    return (
+        <>
+            <Card className="bg-dark">
+                {/* <img
+            //style={styles.image}
+            src="https://harrisonmusic.com.au/wp-content/uploads/2018/07/1080x500.png"
+            alt="test"
+          /> */}
+                {props.description}
+            </Card>
+        </>
+    );
 }
 
 export default ProjectCard;
