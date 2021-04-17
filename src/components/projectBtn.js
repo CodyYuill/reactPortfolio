@@ -12,9 +12,13 @@ function ProjectBtn(props) {
     return (
         <>
             <Card.Header>
-                <Button variant="link" style={styles} onClick={props.handleClick} id={props.id}>
-                    Click
-                    meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee!
+                <Button
+                    variant="link"
+                    style={styles}
+                    onClick={props.handleClick}
+                    id={props.id}
+                >
+                    {props.id}
                 </Button>
             </Card.Header>
         </>

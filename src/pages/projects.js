@@ -6,15 +6,6 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 const projectTitles = ["0", "1", "2", "3", "4", "5"];
 
-const projects = {
-    "0" :{
-        description: "p1"
-    },
-    "1" :{
-        description: "p2"
-    }
-}
-
 function Projects() {
 
     const [project, setProject] = useState("0");
@@ -30,13 +21,13 @@ function Projects() {
                 {/* </div><div className="col-lg-2" style={{display: "inline-block", position: "absolute"}}> */}
                 <div className="col-lg-2" style={{ display: "inline-block" }}>
                     <ButtonGroup vertical>
-                        {projectTitles.map((value) => {
-                            return <ProjectBtn id={value} key={value} handleClick={handleClick}/>;
+                        {projectTitles.map((value, index) => {
+                            return <ProjectBtn id={value} key={index} handleClick={handleClick}/>;
                         })}
                     </ButtonGroup>
                 </div>
                 <div className="col" style={{ display: "inline-block" }}>
-                    <ProjectCard description={projects[project].description}/>
+                    <ProjectCard project={project}/>
                 </div>
             </div>
         </>
