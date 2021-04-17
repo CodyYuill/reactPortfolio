@@ -11,7 +11,7 @@ function Footer() {
         <>
         <footer className="footer mt-auto py-3 bg-dark"  style={styles}>
             <div className="container">
-            <span className="text-muted">Place sticky footer content here.</span>
+            <span className="text-muted">Cody Yuill 2021.</span>
             </div>
         </footer>
         </>

@@ -25,13 +25,13 @@ function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contact
+                <a className="nav-link active" href="/projects">
+                  Projects
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/projects">
-                  Projects
+                <a className="nav-link active" href="/contact">
+                  Contact
                 </a>
               </li>
             </ul>
