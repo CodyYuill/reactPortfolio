@@ -4,11 +4,13 @@ import ProjectCard from "../components/projectCard";
 import ProjectBtn from "../components/projectBtn";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-const projectTitles = ["0", "1", "2", "3", "4", "5"];
+const projectTitles = ["Vibe Cannon", "The Games Folder", "Weather Dashboard", "Offline Budget Tracker", "Employee Directory", "Fitness Tracker"];
+
+
 
 function Projects() {
 
-    const [project, setProject] = useState("0");
+    const [project, setProject] = useState("Vibe Cannon");
 
     const handleClick = (event) => {
         setProject(event.target.id);
@@ -16,10 +18,9 @@ function Projects() {
 
     return (
         <>
-            <h1>PROJECTS PAGE</h1>
+            <h1>Projects</h1>
             <div className="container-fluid">
-                {/* </div><div className="col-lg-2" style={{display: "inline-block", position: "absolute"}}> */}
-                <div className="col-lg-2" style={{ display: "inline-block" }}>
+                <div className="col-lg-4" style={{ display: "inline-block", verticalAlign: "top" }}>
                     <ButtonGroup vertical>
                         {projectTitles.map((value, index) => {
                             return <ProjectBtn id={value} key={index} handleClick={handleClick}/>;

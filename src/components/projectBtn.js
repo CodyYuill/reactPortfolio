@@ -4,9 +4,13 @@ import Button from "react-bootstrap/Button";
 let styles = {
     color: "white",
     textDecoration: "none",
-    width: "280px",
+    width: "350px",
     wordWrap: "break-word",
+    fontSize: "25px"
+
 };
+
+
 
 function ProjectBtn(props) {
     return (
