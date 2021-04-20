@@ -12,7 +12,7 @@ import { faEnvelope, faMobileAlt, faFileDownload } from '@fortawesome/free-solid
 
 library.add(fab, faEnvelope, faMobileAlt, faFileDownload);
 
-function TodoList() {
+function App() {
   return (
     <Router>
       <Header />
@@ -24,4 +24,4 @@ function TodoList() {
   );
 }
 
-export default TodoList;
+export default App;
