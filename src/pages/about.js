@@ -1,19 +1,36 @@
 import "../App.css";
 
-import Jumbotron from "react-bootstrap/Jumbotron";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+import Headshot from "../assets/headshot.jpg";
+
+let styles = {
+    img: {
+        width: "50%",
+        display: "inline-block"
+    },
+    text: {
+        display: "inline-block",
+        fontSize: "20px",
+        textAlign: "center"
+    }
+}
 
 function About() {
     return (
         <>
-            <h1>ABOUT PAGE</h1>
-            <Jumbotron>
-                <h1>Hello, world!</h1>
-                <p>
-                    This is a simple hero unit, a simple jumbotron-style
-                    component for calling extra attention to featured content or
-                    information.
-                </p>
-            </Jumbotron>
+        <Container>
+            <Row className="align-items-center">
+                <Col>
+                    <Image src={Headshot} className="float-left" fluid></Image>
+                </Col>
+                <Col>
+                    <p style={styles.text}>I’m a young aspiring Full-Stack developer currently taking Carleton University’s coding bootcamp. Also Graduated from Algonquin College’s Game Development program in March 2020.</p>
+                </Col>
+            </Row>
+        </Container>
         </>
     );
 }

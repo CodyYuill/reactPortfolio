@@ -1,12 +1,12 @@
 import Card from "react-bootstrap/Card";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import vibeCannonSS from '../imgs/LM-screenshot.jpg';
-import gamesFolderSS from '../imgs/GF-RLP-screenshot.jpg';
-import weatherDashboardSS from '../imgs/WD-screenshot.jpg';
-import budgetTrackerSS from '../imgs/OBT-screenshot.jpg';
-import employeeDirectorySS from '../imgs/ED-screenshot.jpg';
-import fitnessTrackerSS from '../imgs/FT-screenshot.jpg';
+import vibeCannonSS from '../assets/LM-screenshot.jpg';
+import gamesFolderSS from '../assets/GF-RLP-screenshot.jpg';
+import weatherDashboardSS from '../assets/WD-screenshot.jpg';
+import budgetTrackerSS from '../assets/OBT-screenshot.jpg';
+import employeeDirectorySS from '../assets/ED-screenshot.jpg';
+import fitnessTrackerSS from '../assets/FT-screenshot.jpg';
 
 const projects = {
     "Vibe Cannon": {
