@@ -1,45 +1,25 @@
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+
 function Header() {
-  return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <b className="navbar-brand">
-            Cody Yuill
-          </b>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/projects">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
-  );
+    return (
+        <>
+            <Container fluid>
+                <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+                    <Navbar.Brand>Cody Yuill</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" expand="sm">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="/">About</Nav.Link>
+                            <Nav.Link href="/projects">Projects</Nav.Link>
+                            <Nav.Link href="/contact">Contact</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Container>
+        </>
+    );
 }
 
 export default Header;
