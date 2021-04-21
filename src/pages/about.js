@@ -28,6 +28,8 @@ let styles = {
         marginLeft: "45px",
         fontSize: "25px",
         display: "inline-block",
+        alignItems: "center",
+        alignText: "center",
     },
     resumeBtn: {
         fontSize: "19px",
@@ -44,7 +46,7 @@ function About() {
             <Container>
                 <Card bg="dark" style={styles.card}>
                     <Row className="align-items-center">
-                        <Col>
+                        <Col sm={12} md={6}>
                             <Image
                                 src={Headshot}
                                 className="float-left"
@@ -58,47 +60,45 @@ function About() {
                                 Also Graduated from Algonquin College’s Game
                                 Development program in March 2020.
                             </p>
+                            <p style={styles.contactInfo}>
+                                <FontAwesomeIcon icon={["fab", "github"]} />
+                                <a
+                                    href="https://github.com/CodyYuill"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {" "}
+                                    /CodyYuill
+                                </a>
+                            </p>
+                            <p style={styles.contactInfo}>
+                                <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                                <a
+                                    href="https://linkedin.com/in/CodyYuill"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {" "}
+                                    /CodyYuill
+                                </a>
+                            </p>
+                            <p style={styles.contactInfo}>
+                                <FontAwesomeIcon icon="envelope" />{" "}
+                                codyyuill@hotmail.com
+                            </p>
+                            <p style={styles.contactInfo}>
+                                <FontAwesomeIcon icon="mobile-alt" />{" "}
+                                (613)222-2982
+                            </p>
+                            <a href={Resume} download>
+                                <Button variant="info" style={styles.resumeBtn}>
+                                    <FontAwesomeIcon icon="file-download" />{" "}
+                                    Resume
+                                </Button>
+                            </a>
                         </Col>
                     </Row>
                 </Card>
-                <Row className="align-items-center" style={styles.container}>
-                    <Col style={styles.container}>
-                        <p style={styles.contactInfo}>
-                            <FontAwesomeIcon icon={["fab", "github"]} />
-                            <a
-                                href="https://github.com/CodyYuill"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {" "}
-                                /CodyYuill
-                            </a>
-                        </p>
-                        <p style={styles.contactInfo}>
-                            <FontAwesomeIcon icon={["fab", "linkedin"]} />
-                            <a
-                                href="https://linkedin.com/in/CodyYuill"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {" "}
-                                /CodyYuill
-                            </a>
-                        </p>
-                        <p style={styles.contactInfo}>
-                            <FontAwesomeIcon icon="envelope" />{" "}
-                            codyyuill@hotmail.com
-                        </p>
-                        <p style={styles.contactInfo}>
-                            <FontAwesomeIcon icon="mobile-alt" /> (613)222-2982
-                        </p>
-                        <a href={Resume} download>
-                            <Button variant="info" style={styles.resumeBtn}>
-                                <FontAwesomeIcon icon="file-download" /> Resume
-                            </Button>
-                        </a>
-                    </Col>
-                </Row>
             </Container>
         </>
     );
