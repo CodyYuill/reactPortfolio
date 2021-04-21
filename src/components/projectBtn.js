@@ -13,8 +13,8 @@ let styles = {
     hor: {
         color: "white",
         textDecoration: "none",
-        alignSelf: "stretch",
-        width: "100%",
+        //alignSelf: "stretch",
+        //width: "100%",
         fontSize: "20px",
     },
 };
