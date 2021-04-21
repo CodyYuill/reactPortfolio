@@ -15,7 +15,7 @@ let styles = {
         textDecoration: "none",
         alignSelf: "stretch",
         width: "100%",
-        fontSize: "25px",
+        fontSize: "20px",
     },
 };
 
