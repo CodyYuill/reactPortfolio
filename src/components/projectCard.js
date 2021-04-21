@@ -75,21 +75,21 @@ let styles = {
     },
     card: {
         alignItems: "center",
-        alignText:"center"
+        alignText:"center",
+        padding: "20px"
     }
 };
 
 function ProjectCard(props) {
     return (
         <div className="container">
-            <Card className="bg-dark" style={styles.card}>
+            <Card className="bg-dark"style={styles.card}>
                 <Card.Img
-                    //style={styles.image}
                     src={projects[props.project].screenshot}
                     alt="screenshot of app"
                 />
                 <h3>Description:</h3>
-                <p style={{alignText: "center"}}>{projects[props.project].description}</p>
+                <p style={{textAlignLast: "center"}}>{projects[props.project].description}</p>
                 <h3>Technologies:</h3>
                 <p>{projects[props.project].tech}</p>
                 <h3>Role:</h3>
