@@ -42,7 +42,7 @@ function Projects() {
                 <Row>
                     <Col sm={12}>
                         {isWindowWide ? (
-                            <ButtonGroup>
+                            <ButtonGroup style={{ width: "100%" }}>
                                 {projectTitles.map((value, index) => {
                                     return (
                                         <ProjectBtn
@@ -55,7 +55,7 @@ function Projects() {
                                 })}
                             </ButtonGroup>
                         ) : (
-                            <ButtonGroup vertical>
+                            <ButtonGroup style={{ width: "100%" }} vertical>
                                 {projectTitles.map((value, index) => {
                                     return (
                                         <ProjectBtn

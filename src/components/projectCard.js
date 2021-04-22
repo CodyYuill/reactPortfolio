@@ -108,7 +108,7 @@ function ProjectCard(props) {
                 <p>{projects[props.project].tech}</p>
                 <h3>Role:</h3>
                 <p>{projects[props.project].role}</p>
-                <ButtonGroup>
+                <ButtonGroup >
                     <Button className="btn btn-primary">
                         <a
                             target="_blank"
