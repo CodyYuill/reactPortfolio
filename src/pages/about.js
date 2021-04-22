@@ -24,7 +24,6 @@ let styles = {
     },
     contactInfo: {
         marginTop: "15px",
-        marginRight: "45px",
         marginLeft: "45px",
         fontSize: "25px",
         display: "inline-block",
@@ -90,7 +89,7 @@ function About() {
                                 <FontAwesomeIcon icon="mobile-alt" />{" "}
                                 (613)222-2982
                             </p>
-                            <a href={Resume} download>
+                            <a href={Resume} style={styles.contactInfo} download>
                                 <Button variant="info" style={styles.resumeBtn}>
                                     <FontAwesomeIcon icon="file-download" />{" "}
                                     Resume

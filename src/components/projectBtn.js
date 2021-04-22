@@ -1,11 +1,16 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-let styles = {
+let btnStyles = {
+    card: {
+        display: "block",
+        width: "500px"
+    },
     vert: {
         color: "white",
         textDecoration: "none",
-        width: "350px",
+        //display: "block",
+        width: "100%",
         wordWrap: "break-word",
         fontSize: "25px",
         textAlign: "center",
@@ -14,26 +19,35 @@ let styles = {
         color: "white",
         textDecoration: "none",
         //alignSelf: "stretch",
-        //width: "100%",
+        width: "100%",
         fontSize: "20px",
+    },
+};
+
+let cardStyles = {
+    vert: {
+        display: "block",
+        width: "470px",
+        alignItems: "center"
+    },
+    hor: {
+
     },
 };
 
 function ProjectBtn(props) {
     return (
-        <>
-            <Card.Header>
-                <Button
-                    className="btn-group"
-                    variant="link"
-                    style={styles.hor}
-                    onClick={props.handleClick}
-                    id={props.id}
-                >
-                    {props.id}
-                </Button>
-            </Card.Header>
-        </>
+        <Card.Header style={cardStyles[props.vOrH]}>
+            <Button
+                variant="link"
+                style={btnStyles[props.vOrH]}
+                onClick={props.handleClick}
+                id={props.id}
+                block
+            >
+                {props.id}
+            </Button>
+        </Card.Header>
     );
 }
 

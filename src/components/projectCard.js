@@ -1,15 +1,16 @@
 import Card from "react-bootstrap/Card";
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import vibeCannonSS from '../assets/LM-screenshot.jpg';
-import gamesFolderSS from '../assets/GF-RLP-screenshot.jpg';
-import weatherDashboardSS from '../assets/WD-screenshot.jpg';
-import budgetTrackerSS from '../assets/OBT-screenshot.jpg';
-import employeeDirectorySS from '../assets/ED-screenshot.jpg';
-import fitnessTrackerSS from '../assets/FT-screenshot.jpg';
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import vibeCannonSS from "../assets/LM-screenshot.jpg";
+import gamesFolderSS from "../assets/GF-RLP-screenshot.jpg";
+import weatherDashboardSS from "../assets/WD-screenshot.jpg";
+import budgetTrackerSS from "../assets/OBT-screenshot.jpg";
+import employeeDirectorySS from "../assets/ED-screenshot.jpg";
+import fitnessTrackerSS from "../assets/FT-screenshot.jpg";
 
 const projects = {
     "Vibe Cannon": {
+        title: "Vibe Cannon",
         description:
             "One stop shop for your quarantine music needs. Search a song by title and artist and receive the songs lyrics, top 3 videos from YouTube or Vimeo, and the iTunes information.",
         tech:
@@ -20,6 +21,7 @@ const projects = {
         deployed: "https://codyyuill.github.io/Vibe-Cannon/",
     },
     "The Games Folder": {
+        title: "The Games Folder",
         description: "Buy and review video games online.",
         tech:
             "Javascript, CSS, HTML, Bootstrap, MySQL, Express, Heroku, Node.js, Handlebars, JSON Web Tokens",
@@ -29,6 +31,7 @@ const projects = {
         deployed: "https://group1-project2.herokuapp.com/",
     },
     "Weather Dashboard": {
+        title: "Weather Dashboard",
         description:
             "Search cities by name to receive the current weather, along with a 5 day forecast.",
         tech:
@@ -39,7 +42,9 @@ const projects = {
         deployed: "https://codyyuill.github.io/WeatherDashboard/",
     },
     "Offline Budget Tracker": {
-        description: "Track you budget with ease whether you have a connection or not. If transactions are made while offline they will be saved and submitted once a connection is made.",
+        title: "Offline Budget Tracker",
+        description:
+            "Track you budget with ease whether you have a connection or not. If transactions are made while offline they will be saved and submitted once a connection is made.",
         tech: "Javascript, CSS, HTML, Node.js, Express, MongoDB, IndexedDB",
         role: "Solo Project",
         screenshot: budgetTrackerSS,
@@ -47,7 +52,9 @@ const projects = {
         deployed: "https://obscure-brushlands-28476.herokuapp.com/",
     },
     "Employee Directory": {
-        description: "Search and filter for employees based on multiple fields.",
+        title: "Employee Directory",
+        description:
+            "Search and filter for employees based on multiple fields.",
         tech: "React, Bootstrap, Node.js, Random User Generator API",
         role: "Solo Project",
         screenshot: employeeDirectorySS,
@@ -55,7 +62,9 @@ const projects = {
         deployed: "https://codyyuill.github.io/employeedirectory/",
     },
     "Fitness Tracker": {
-        description: "Input your workouts and compare past workouts to track your progress",
+        title: "Fitness Tracker",
+        description:
+            "Input your workouts and compare past workouts to track your progress",
         tech: "Javascript, CSS, HTML, Node,js, Express, MongoDB",
         role: "Solo Project",
         screenshot: fitnessTrackerSS,
@@ -65,43 +74,48 @@ const projects = {
 };
 
 let styles = {
-    a:{
+    a: {
         color: "white",
-        textDecoration: "none"
+        textDecoration: "none",
     },
     btn: {
         width: "fit-content",
-        padding: "5px 15px"
+        padding: "5px 15px",
     },
     card: {
         alignItems: "center",
-        alignText:"center",
-        padding: "20px"
-    }
+        alignText: "center",
+        padding: "20px",
+    },
 };
 
 function ProjectCard(props) {
     return (
         <div className="container">
-            <Card className="bg-dark"style={styles.card}>
+            <Card className="bg-dark" style={styles.card}>
+                <Card.Header>
+                    <h1>{projects[props.project].title}</h1>
+                </Card.Header>
                 <Card.Img
                     src={projects[props.project].screenshot}
                     alt="screenshot of app"
                 />
                 <h3>Description:</h3>
-                <p style={{textAlignLast: "center"}}>{projects[props.project].description}</p>
+                <p style={{ textAlignLast: "center" }}>
+                    {projects[props.project].description}
+                </p>
                 <h3>Technologies:</h3>
                 <p>{projects[props.project].tech}</p>
                 <h3>Role:</h3>
                 <p>{projects[props.project].role}</p>
                 <ButtonGroup>
-                    <Button className="btn btn-danger">
+                    <Button className="btn btn-primary">
                         <a
                             target="_blank"
                             rel="noreferrer"
                             style={styles.a}
                             href={projects[props.project].github}
-                            >
+                        >
                             Github Repository
                         </a>
                     </Button>
@@ -111,7 +125,7 @@ function ProjectCard(props) {
                             rel="noreferrer"
                             style={styles.a}
                             href={projects[props.project].deployed}
-                            >
+                        >
                             Deployment
                         </a>
                     </Button>
