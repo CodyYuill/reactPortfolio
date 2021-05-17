@@ -107,7 +107,7 @@ function ProjectCard(props) {
                 <h3>Role:</h3>
                 <p>{projects[props.project].role}</p>
                 <ButtonGroup >
-                    <Button className="btn btn-primary">
+                    <Button className="btn btn-primary" style={{marginLeft: "25%"}}>
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -117,7 +117,7 @@ function ProjectCard(props) {
                             Github Repository
                         </a>
                     </Button>
-                    <Button className="btn btn-danger">
+                    <Button className="btn btn-danger" style={{marginRight: "25%"}}>
                         <a
                             target="_blank"
                             rel="noreferrer"
