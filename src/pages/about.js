@@ -11,8 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 let styles = {
   img: {
-    maxWidth: "300px",
-    maxHeight: "300px",
+    maxWidth: "350px",
+    maxHeight: "350px",
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
@@ -22,11 +22,11 @@ let styles = {
     fontSize: "20px",
   },
   card: {
-    marginTop: "35px",
     padding: "20px",
     width: "50%",
     minWidth: "400px",
     margin: "0 auto",
+    marginTop: "20px",
   },
   contactInfo: {
     marginTop: "15px",
