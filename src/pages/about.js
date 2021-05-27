@@ -19,7 +19,7 @@ let styles = {
   },
   text: {
     display: "inline-block",
-    fontSize: "20px",
+    fontSize: "18px",
   },
   card: {
     padding: "20px",
@@ -60,38 +60,50 @@ function About() {
               ></Image>
             </Col>
             <Col>
-              <Row  className="align-items-center">
-                  <p style={styles.contactInfo}>
-                    <a
-                      href="https://github.com/CodyYuill"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        style={{ color: "white" }}
-                        icon={["fab", "github"]}
-                      />
-                    </a>
-                    <span style={{marginLeft: "20px", marginRight: "20px"}}></span>
-                    <a
-                      href="https://linkedin.com/in/CodyYuill"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        style={{ color: "white" }}
-                        icon={["fab", "linkedin"]}
-                      />
-                    </a>
-                  </p>
+              <Row className="align-items-center">
+                <p style={styles.contactInfo}>
+                  <a
+                    href="https://github.com/CodyYuill"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      style={{ color: "white" }}
+                      icon={["fab", "github"]}
+                    />
+                  </a>
+                  <span
+                    style={{ marginLeft: "20px", marginRight: "20px" }}
+                  ></span>
+                  <a
+                    href="https://linkedin.com/in/CodyYuill"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      style={{ color: "white" }}
+                      icon={["fab", "linkedin"]}
+                    />
+                  </a>
+                </p>
               </Row>
               <p style={styles.text}>
-                An aspiring Full-Stack developer currently taking Carleton
-                University’s coding bootcamp. Also Graduated from Algonquin
-                College’s Game Development program in March 2020.
+                Full stack web developer using knowledge of game development to
+                create mobile first environments largely focused on UI/UX.
+                Recently earned a certificate in full stack development from
+                Carleton University, developing skills in Javascript, CSS, API’s
+                and responsive web design. I’ve experienced working in agile
+                environments during a recent project where I worked in a group
+                of three to create a single page web-app that allows users to
+                search a song by title and artist to receive various information
+                about the song, such as the lyrics and album name. With each new
+                project I strive to write clean understandable code while
+                focusing on creating a good UX. I look forward to applying my
+                skills to a quality-driven team to create engaging and memorable
+                experiences on the web.
               </p>
               <p style={styles.contactInfo}>
-                <FontAwesomeIcon icon="envelope" /> codyyuill@hotmail.com
+                <FontAwesomeIcon icon="envelope" /> codyyuill48@gmail.com
               </p>
               <p style={styles.contactInfo}>
                 <FontAwesomeIcon icon="mobile-alt" /> (613)222-2982
