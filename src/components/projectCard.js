@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import vibeCannonSS from "../assets/LM-screenshot.jpg";
-import gamesFolderSS from "../assets/GF-RLP-screenshot.jpg";
+//import gamesFolderSS from "../assets/GF-RLP-screenshot.jpg";
 import weatherDashboardSS from "../assets/WD-screenshot.jpg";
 import budgetTrackerSS from "../assets/OBT-screenshot.jpg";
 import employeeDirectorySS from "../assets/ED-screenshot.jpg";
@@ -20,16 +20,16 @@ const projects = {
         github: "https://github.com/CodyYuill/Vibe-Cannon",
         deployed: "https://codyyuill.github.io/Vibe-Cannon/",
     },
-    "The Games Folder": {
-        title: "The Games Folder",
-        description: "Buy and review video games online.",
-        tech:
-            "Javascript, CSS, HTML, Bootstrap, MySQL, Express, Heroku, Node.js, Handlebars, JSON Web Tokens",
-        role: "Backend",
-        screenshot: gamesFolderSS,
-        github: "https://github.com/CodyYuill/The-Games-Folder",
-        deployed: "https://group1-project2.herokuapp.com/",
-    },
+    // "The Games Folder": {
+    //     title: "The Games Folder",
+    //     description: "Buy and review video games online.",
+    //     tech:
+    //         "Javascript, CSS, HTML, Bootstrap, MySQL, Express, Heroku, Node.js, Handlebars, JSON Web Tokens",
+    //     role: "Backend",
+    //     screenshot: gamesFolderSS,
+    //     github: "https://github.com/CodyYuill/The-Games-Folder",
+    //     deployed: "https://group1-project2.herokuapp.com/",
+    // },
     "Weather Dashboard": {
         title: "Weather Dashboard",
         description:

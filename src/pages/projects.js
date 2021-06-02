@@ -11,7 +11,7 @@ const projectTitles = [
   "Weather Dashboard",
   "Offline Budget Tracker",
   "Fitness Tracker",
-  "The Games Folder",
+  //"The Games Folder",
   "Vibe Cannon",
 ];
 
